@@ -127,5 +127,31 @@ body {
     </a>
     
 </div>
+
+<!-- 翻訳支援：＋ボタン -->
+<button id="fab">＋</button>
+
+<!-- 翻訳支援：オーバーレイ -->
+<div id="overlay" class="hidden"></div>
+
+<!-- 翻訳支援：パネル -->
+<div id="panel" class="hidden">
+  <h2>翻訳支援（確認用）</h2>
+  <textarea id="jp" placeholder="日本語を入力してください"></textarea>
+
+  <div class="btns">
+    <button data-t="google">Google翻訳</button>
+    <button data-t="deepl">DeepL</button>
+    <button data-t="gemini">Gemini</button>
+  </div>
+
+  <p class="note">
+    翻訳結果には誤りが含まれる場合があります。使用する前に、内容を必ず確認してください。
+  </p>
+</div>
+
+<link rel="stylesheet" href="translator.css">
+<script src="translator.js"></script>
+
 </body>
 </html>
