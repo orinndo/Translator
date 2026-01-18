@@ -23,3 +23,13 @@ document.querySelectorAll("#panel .btns button").forEach(btn=>{
     }
   };
 });
+
+document.getElementById('copyInputBtn')?.addEventListener('click',()=>{
+  const t=document.getElementById('jpText').value;
+  if(!t) return;
+  navigator.clipboard.writeText(t);
+  const toast=document.getElementById('toast');
+  toast.textContent='コピーしました';
+  toast.classList.add('show');
+  setTimeout(()=>toast.classList.remove('show'),1200);
+});

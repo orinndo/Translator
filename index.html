@@ -49,8 +49,25 @@ body {
 </head>
 <body>
 <div class="header">
-  <h1>音声ガイドを選択してください</h1>
-  <p>該当する案内をタップすると自動的に移動します。</p>
+  
+
+
+<div class="header-title frame-title">
+  <h1 class="main-title">
+    冠動脈造影CT検査<br>
+    <span class="sub-title">英語音声ガイド</span>
+  </h1>
+  <p class="en-title">
+    Coronary CT Angiography – English Audio Guide
+  </p>
+</div>
+
+
+  <div>
+    
+  </div>
+</div>
+
 </div>
 <div class="container">
   
@@ -83,6 +100,7 @@ body {
 <!-- 翻訳ツール：パネル -->
 <div id="panel" class="hidden">
   <h2>翻訳ツール</h2>
+<div class="translator-glass">
   <textarea id="jp" placeholder="日本語を入力してください"></textarea>
 
   <div class="btns">
@@ -92,13 +110,27 @@ body {
   </div>
 
   <p class="note">
-    翻訳結果には誤りが含まれる場合があります。使用する前に、内容を必ず確認してください。
+    翻訳結果には誤りが含まれる場合があります。使用する前に、内容を必ず確認してください。</div>
   </p>
 </div>
 
 <link rel="stylesheet" href="translator.css">
 <script src="translator.js"></script>
 
+
+<div class="page-footer">
+  <hr>
+  <p class="creator">
+    作成：上地 慶知<br>
+    所属：放射線課
+  </p>
+  <p class="creator-en">
+    Created by Yoshitomo Uechi<br>
+    Department of Radiology
+  </p>
+</div>
+
+<div id="toast" class="toast"></div>
 </body>
 </html><a class="card" href="https://orinndo.github.io/patient-entry/">
       <div class="num">01</div>
